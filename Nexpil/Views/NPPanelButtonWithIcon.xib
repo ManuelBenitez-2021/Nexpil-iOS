@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NPPanelButtonWithIcon" customModule="Nexpil" customModuleProvider="target">
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="colorScheme">
+                    <integer key="value" value="0"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="descriptionLabel" destination="V9A-W2-uHS" id="MBH-gO-GZq"/>
+                <outlet property="iconImageView" destination="Wuw-dm-TnX" id="vYQ-Ry-8hn"/>
+                <outlet property="titleTextLabel" destination="zDX-fV-ewa" id="4qe-Zq-4va"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="355" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Use Microphone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDX-fV-ewa">
+                    <rect key="frame" x="10" y="10" width="248" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="M5G-c3-PzF"/>
+                        <constraint firstAttribute="width" constant="248" id="YVW-nl-X2c"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Read the instructions on the label and we will write it down for you." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9A-W2-uHS">
+                    <rect key="frame" x="10" y="51" width="335" height="39"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic" translatesAutoresizingMaskIntoConstraints="NO" id="Wuw-dm-TnX">
+                    <rect key="frame" x="321" y="10" width="14" height="21"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Wuw-dm-TnX" secondAttribute="trailing" constant="20" id="7Nn-6z-WKz"/>
+                <constraint firstItem="V9A-W2-uHS" firstAttribute="top" secondItem="Wuw-dm-TnX" secondAttribute="bottom" constant="20" id="D1B-vA-cfN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="V9A-W2-uHS" secondAttribute="trailing" constant="10" id="PhY-Ll-YR9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="V9A-W2-uHS" secondAttribute="bottom" constant="10" id="ViE-DL-91S"/>
+                <constraint firstItem="zDX-fV-ewa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="asn-o2-GBV"/>
+                <constraint firstItem="V9A-W2-uHS" firstAttribute="top" secondItem="zDX-fV-ewa" secondAttribute="bottom" constant="17" id="m15-0m-wdt"/>
+                <constraint firstItem="V9A-W2-uHS" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="mdJ-92-UYD"/>
+                <constraint firstItem="Wuw-dm-TnX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="nak-Hh-A64"/>
+                <constraint firstItem="zDX-fV-ewa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="nqO-Bs-T9C"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="138.40000000000001" y="142.1289355322339"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="mic" width="14" height="21"/>
+    </resources>
+</document>

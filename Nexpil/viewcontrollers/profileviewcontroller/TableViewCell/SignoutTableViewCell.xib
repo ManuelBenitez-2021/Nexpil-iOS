@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SignoutTableViewCell" rowHeight="68" id="E7N-lA-Tfv" customClass="SignoutTableViewCell" customModule="Nexpil" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="E7N-lA-Tfv" id="GdK-hp-U6O">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SDS-ox-Yu5">
+                        <rect key="frame" x="8" y="8" width="359" height="53.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Out" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wCq-Pb-uBa">
+                                <rect key="frame" x="34.5" y="16" width="290" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="290" id="jUP-WT-fYe"/>
+                                    <constraint firstAttribute="height" constant="21" id="wzQ-xH-1P4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wCq-Pb-uBa" firstAttribute="centerY" secondItem="SDS-ox-Yu5" secondAttribute="centerY" id="JfF-5q-0b6"/>
+                            <constraint firstItem="wCq-Pb-uBa" firstAttribute="centerX" secondItem="SDS-ox-Yu5" secondAttribute="centerX" id="Rk1-Jl-76L"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="SDS-ox-Yu5" secondAttribute="trailing" constant="8" id="69y-56-6M2"/>
+                    <constraint firstItem="SDS-ox-Yu5" firstAttribute="top" secondItem="GdK-hp-U6O" secondAttribute="top" constant="8" id="Qvi-NO-egA"/>
+                    <constraint firstItem="SDS-ox-Yu5" firstAttribute="leading" secondItem="GdK-hp-U6O" secondAttribute="leading" constant="8" id="Vzi-pX-2fD"/>
+                    <constraint firstAttribute="bottom" secondItem="SDS-ox-Yu5" secondAttribute="bottom" constant="8" id="goE-Rk-Hay"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <real key="value" value="10"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                        <color key="value" red="0.48627450979999998" green="0.8862745098" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                        <color key="value" red="0.48627450979999998" green="0.8862745098" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                        <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="number" keyPath="shadowY">
+                        <real key="value" value="2"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="660-AD-tu8"/>
+            <connections>
+                <outlet property="bgView" destination="SDS-ox-Yu5" id="Kg3-5W-BxF"/>
+                <outlet property="lblTitle" destination="wCq-Pb-uBa" id="Phq-BE-hrX"/>
+            </connections>
+            <point key="canvasLocation" x="93.5" y="72"/>
+        </tableViewCell>
+    </objects>
+</document>

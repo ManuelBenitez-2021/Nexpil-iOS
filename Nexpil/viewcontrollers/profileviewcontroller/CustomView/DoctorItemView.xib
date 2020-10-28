@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="DoctorItemView" id="iN0-l3-epB" customClass="DoctorItemView" customModule="Nexpil" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lJr-Lz-ZcV">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Dnq-ai-A7R">
+                    <rect key="frame" x="13" y="12.5" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="aJa-EB-ksi"/>
+                        <constraint firstAttribute="height" constant="50" id="s9V-LX-fQl"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dr. Julie Smith" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzo-WS-zon">
+                    <rect key="frame" x="87" y="12" width="146.5" height="24.5"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(872) 484-1919" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4s0-Mv-Mip">
+                    <rect key="frame" x="87" y="44" width="105" height="19"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Dnq-ai-A7R" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="INK-yt-Os4"/>
+                <constraint firstItem="tzo-WS-zon" firstAttribute="leading" secondItem="Dnq-ai-A7R" secondAttribute="trailing" constant="24" id="OaR-25-jHG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="lJr-Lz-ZcV" secondAttribute="bottom" id="Pfg-iK-jRf"/>
+                <constraint firstItem="4s0-Mv-Mip" firstAttribute="bottom" secondItem="Dnq-ai-A7R" secondAttribute="bottom" id="Q5s-UA-1Ka"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lJr-Lz-ZcV" secondAttribute="trailing" id="UnP-O0-TbM"/>
+                <constraint firstItem="4s0-Mv-Mip" firstAttribute="leading" secondItem="tzo-WS-zon" secondAttribute="leading" id="b6y-t0-jEy"/>
+                <constraint firstItem="lJr-Lz-ZcV" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eUY-r1-b9M"/>
+                <constraint firstItem="tzo-WS-zon" firstAttribute="top" secondItem="Dnq-ai-A7R" secondAttribute="top" id="jL2-al-UoV"/>
+                <constraint firstItem="Dnq-ai-A7R" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="tZB-51-RJa"/>
+                <constraint firstItem="lJr-Lz-ZcV" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="waX-x1-WLS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="avatarUIV" destination="Dnq-ai-A7R" id="2tB-j8-5j4"/>
+                <outlet property="nameUL" destination="tzo-WS-zon" id="opR-Nq-xfd"/>
+                <outlet property="phoneUL" destination="4s0-Mv-Mip" id="m1g-AL-Ad8"/>
+                <outlet property="wholeUV" destination="lJr-Lz-ZcV" id="04f-xp-tu4"/>
+            </connections>
+            <point key="canvasLocation" x="25.5" y="-230.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CommunityItemView" id="iN0-l3-epB" customClass="CommunityItemView" customModule="Nexpil" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vmb-Ec-uiI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lpd-MA-B6y">
+                    <rect key="frame" x="13" y="12" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="Ph3-WM-kfG"/>
+                        <constraint firstAttribute="height" constant="50" id="Q4U-y1-WOz"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cCq-93-goM">
+                    <rect key="frame" x="87" y="25" width="54.5" height="24.5"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="cCq-93-goM" firstAttribute="centerY" secondItem="Vmb-Ec-uiI" secondAttribute="centerY" id="NEe-Hr-kaa"/>
+                <constraint firstItem="lpd-MA-B6y" firstAttribute="centerY" secondItem="Vmb-Ec-uiI" secondAttribute="centerY" id="OYs-3P-siG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Vmb-Ec-uiI" secondAttribute="trailing" id="UZ4-pf-uSi"/>
+                <constraint firstItem="lpd-MA-B6y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="13" id="WEg-ur-Bmy"/>
+                <constraint firstItem="Vmb-Ec-uiI" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dCf-kf-b00"/>
+                <constraint firstAttribute="bottom" secondItem="Vmb-Ec-uiI" secondAttribute="bottom" id="gEs-IO-WOi"/>
+                <constraint firstItem="Vmb-Ec-uiI" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="jb1-9q-zaU"/>
+                <constraint firstItem="cCq-93-goM" firstAttribute="leading" secondItem="lpd-MA-B6y" secondAttribute="trailing" constant="24" id="tLw-nR-KFz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="avatarUIV" destination="lpd-MA-B6y" id="cXN-I7-ACt"/>
+                <outlet property="nameUL" destination="cCq-93-goM" id="MbY-YO-wMr"/>
+                <outlet property="wholeUV" destination="Vmb-Ec-uiI" id="txP-99-T9l"/>
+            </connections>
+            <point key="canvasLocation" x="22.5" y="-148.5"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PharmacyTableViewCell" id="KGk-i7-Jjw" customClass="PharmacyTableViewCell" customModule="Nexpil" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EnH-vS-Kcb">
+                        <rect key="frame" x="8" y="8" width="359" height="63.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cpu-rG-RHj">
+                                <rect key="frame" x="8" y="11.5" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="40" id="9zG-Op-dSg"/>
+                                    <constraint firstAttribute="height" constant="40" id="zoe-UQ-4jf"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CVS Pharmacy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="by9-Yq-8te">
+                                <rect key="frame" x="69" y="10" width="221" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Buk-JJ-MG6"/>
+                                    <constraint firstAttribute="width" constant="221" id="a7T-eO-6AE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_pin" translatesAutoresizingMaskIntoConstraints="NO" id="zUv-Ml-lR6">
+                                <rect key="frame" x="326" y="19" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="Jqt-pZ-PrR"/>
+                                    <constraint firstAttribute="width" constant="25" id="ooL-T7-K9C"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(312) 970-2881" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="27e-Os-63X">
+                                <rect key="frame" x="69" y="31" width="208" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="IEC-3d-jyY"/>
+                                    <constraint firstAttribute="height" constant="21" id="cdu-co-PoS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="by9-Yq-8te" firstAttribute="leading" secondItem="cpu-rG-RHj" secondAttribute="trailing" constant="21" id="Nkn-yZ-Rxh"/>
+                            <constraint firstItem="cpu-rG-RHj" firstAttribute="centerY" secondItem="EnH-vS-Kcb" secondAttribute="centerY" id="cIu-rt-nia"/>
+                            <constraint firstItem="27e-Os-63X" firstAttribute="top" secondItem="by9-Yq-8te" secondAttribute="bottom" id="h9B-4C-Yiv"/>
+                            <constraint firstItem="cpu-rG-RHj" firstAttribute="leading" secondItem="EnH-vS-Kcb" secondAttribute="leading" constant="8" id="n1N-0r-Oiy"/>
+                            <constraint firstItem="by9-Yq-8te" firstAttribute="top" secondItem="EnH-vS-Kcb" secondAttribute="top" constant="10" id="pXX-Zp-bov"/>
+                            <constraint firstAttribute="trailing" secondItem="zUv-Ml-lR6" secondAttribute="trailing" constant="8" id="phv-Kr-yr7"/>
+                            <constraint firstItem="27e-Os-63X" firstAttribute="leading" secondItem="cpu-rG-RHj" secondAttribute="trailing" constant="21" id="ykJ-1y-okZ"/>
+                            <constraint firstItem="zUv-Ml-lR6" firstAttribute="centerY" secondItem="EnH-vS-Kcb" secondAttribute="centerY" id="z68-An-Z8c"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="EnH-vS-Kcb" secondAttribute="bottom" constant="8" id="6WR-Ob-fMT"/>
+                    <constraint firstItem="EnH-vS-Kcb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="KsL-Gu-Urx"/>
+                    <constraint firstAttribute="trailing" secondItem="EnH-vS-Kcb" secondAttribute="trailing" constant="8" id="YwD-Ae-0nJ"/>
+                    <constraint firstItem="EnH-vS-Kcb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="qUa-kb-qsG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="EnH-vS-Kcb" id="Y1D-r0-48v"/>
+                <outlet property="imgLogo" destination="cpu-rG-RHj" id="5SE-t0-hYh"/>
+                <outlet property="lblName" destination="by9-Yq-8te" id="INQ-fb-J0h"/>
+                <outlet property="lblPhone" destination="27e-Os-63X" id="LUj-Og-qWd"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_pin" width="25" height="25"/>
+    </resources>
+</document>

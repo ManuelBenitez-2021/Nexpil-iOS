@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UserTypeSelectionCard" customModule="Nexpil" customModuleProvider="target">
+            <connections>
+                <outlet property="circleView" destination="K3N-fb-ip2" id="xuA-gE-iri"/>
+                <outlet property="imageView" destination="QnR-D3-a2o" id="hpb-I8-vxR"/>
+                <outlet property="subtitle" destination="gCx-Fa-GyQ" id="WG4-j9-wSv"/>
+                <outlet property="title" destination="Vvu-ML-GVl" id="ylT-lB-5O0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="200"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K3N-fb-ip2">
+                    <rect key="frame" x="0.0" y="0.0" width="335" height="200"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Health" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vvu-ML-GVl">
+                            <rect key="frame" x="116.5" y="10" width="102" height="25"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Manage My Health." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gCx-Fa-GyQ">
+                            <rect key="frame" x="94" y="40" width="147" height="19"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QnR-D3-a2o">
+                            <rect key="frame" x="0.0" y="62" width="335" height="138"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="QnR-D3-a2o" secondAttribute="trailing" id="DNW-a6-s2A"/>
+                        <constraint firstAttribute="bottom" secondItem="QnR-D3-a2o" secondAttribute="bottom" id="F4D-u5-wjm"/>
+                        <constraint firstItem="gCx-Fa-GyQ" firstAttribute="centerX" secondItem="K3N-fb-ip2" secondAttribute="centerX" id="FbQ-4k-akK"/>
+                        <constraint firstItem="Vvu-ML-GVl" firstAttribute="top" secondItem="K3N-fb-ip2" secondAttribute="top" constant="10" id="G0K-2R-Z1s"/>
+                        <constraint firstItem="Vvu-ML-GVl" firstAttribute="centerX" secondItem="K3N-fb-ip2" secondAttribute="centerX" id="TEY-iX-v4i"/>
+                        <constraint firstItem="QnR-D3-a2o" firstAttribute="top" secondItem="gCx-Fa-GyQ" secondAttribute="bottom" constant="3" id="kqn-DN-z1T"/>
+                        <constraint firstItem="QnR-D3-a2o" firstAttribute="leading" secondItem="K3N-fb-ip2" secondAttribute="leading" id="scS-tu-mz5"/>
+                        <constraint firstItem="gCx-Fa-GyQ" firstAttribute="top" secondItem="Vvu-ML-GVl" secondAttribute="bottom" constant="5" id="uKw-cP-lrd"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="K3N-fb-ip2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="02q-Dk-bnn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="K3N-fb-ip2" secondAttribute="bottom" id="XMy-yy-l26"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="K3N-fb-ip2" secondAttribute="trailing" id="Xxp-k0-JgD"/>
+                <constraint firstItem="K3N-fb-ip2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="vmu-fe-tEi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+        </view>
+    </objects>
+</document>

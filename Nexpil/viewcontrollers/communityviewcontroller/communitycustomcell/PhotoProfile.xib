@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PhotoProfile" customModule="Nexpil" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="ZS7-mt-tjd" id="tZ8-lB-Tps"/>
+                <outlet property="photoImage" destination="0bp-lu-EW7" id="QJu-4y-MsG"/>
+                <outlet property="userName" destination="OnT-qb-i2R" id="EwY-Lx-yTv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZS7-mt-tjd">
+                    <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="bottom" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Intersection 1" translatesAutoresizingMaskIntoConstraints="NO" id="0bp-lu-EW7">
+                    <rect key="frame" x="15" y="5" width="80" height="80"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="abC-OW-dDU"/>
+                        <constraint firstAttribute="height" constant="80" id="w22-is-WZ0"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OnT-qb-i2R">
+                    <rect key="frame" x="36.5" y="88" width="37.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ZS7-mt-tjd" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="71R-Ha-BWh"/>
+                <constraint firstItem="OnT-qb-i2R" firstAttribute="top" secondItem="0bp-lu-EW7" secondAttribute="bottom" constant="3" id="Bx6-HR-2s8"/>
+                <constraint firstItem="ZS7-mt-tjd" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="FSU-ko-CHY"/>
+                <constraint firstItem="0bp-lu-EW7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="5" id="FT9-xV-IVC"/>
+                <constraint firstItem="ZS7-mt-tjd" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="VxY-v0-hBD"/>
+                <constraint firstItem="ZS7-mt-tjd" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="YFZ-bW-ziz"/>
+                <constraint firstItem="OnT-qb-i2R" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Zru-Vf-kCJ"/>
+                <constraint firstItem="0bp-lu-EW7" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="yd7-Ls-uyJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-486" y="-153"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Intersection 1" width="54" height="62"/>
+    </resources>
+</document>

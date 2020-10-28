@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SettingTermModalView" id="iN0-l3-epB" customClass="SettingTermModalView" customModule="Nexpil" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qis-9l-9fA">
+                    <rect key="frame" x="20" y="60.5" width="335" height="566.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NOD-np-dmv">
+                            <rect key="frame" x="71" y="20" width="193" height="25"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="20"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aFr-D0-o5U">
+                            <rect key="frame" x="20" y="60" width="295" height="1"/>
+                            <color key="backgroundColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="ijw-yS-PeI"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="35" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MXi-wg-kaV">
+                            <rect key="frame" x="30" y="76" width="275" height="475.5"/>
+                            <string key="text">Please read these terms of use carefully (“Terms”). These Terms provided by Nexpil, Inc. (“Nexpil”) govern and apply to your access and use of www.nexpil.com and Nexpil’s services available via Nexpil’s site and Nexpil’s mobile apps (collectively, the “Service”). By accessing or using our Service, you agree to be bound to all of the terms and conditions described in these Terms. If you do not agree to all of these terms and conditions, do not use our Service. 
+IMPORTANT!!! THE SERVICE IS INTENDED SOLELY AS A TOOL TO ASSIST YOU IN ORGANIZING, UNDERSTANDING AND MANAGING HEALTHCARE-RELATED INFORMATION. THE SERVICE IS NOT INTENDED TO PROVIDE HEALTH OR MEDICAL ADVICE. THE SERVICE IS NOT INTENDED TO (AND DOES NOT) CREATE ANY PATIENT RELATIONSHIP BETWEEN NEXPIL AND YOU, NOR SHOULD IT BE CONSIDERED A REPLACEMENT FOR CONSULTATION WITH A HEALTHCARE PROFESSIONAL. YOU SHOULD NEVER DISREGARD MEDICAL ADVICE OR DELAY SEEKING MEDICAL ADVICE BECAUSE OF SOMETHING YOU HAVE READ ON THE SERVICE OR THE RESULTS YOU RECEIVE THROUGH THE SERVICE.</string>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                            <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wyy-E9-TwO">
+                            <rect key="frame" x="300" y="-10" width="45" height="45"/>
+                            <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="5wG-u8-THM"/>
+                                <constraint firstAttribute="width" constant="45" id="PdS-sz-Z3T"/>
+                            </constraints>
+                            <state key="normal" image="back_small"/>
+                            <connections>
+                                <action selector="onClickBackUB:" destination="iN0-l3-epB" eventType="touchUpInside" id="PvF-OB-yx0"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F2p-Fl-cL2">
+                            <rect key="frame" x="30" y="76" width="275" height="475.5"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="13"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="F2p-Fl-cL2" firstAttribute="leading" secondItem="qis-9l-9fA" secondAttribute="leading" constant="30" id="7cI-57-xdv"/>
+                        <constraint firstItem="wyy-E9-TwO" firstAttribute="top" secondItem="qis-9l-9fA" secondAttribute="top" constant="-10" id="CSX-d6-DGc"/>
+                        <constraint firstItem="aFr-D0-o5U" firstAttribute="top" secondItem="NOD-np-dmv" secondAttribute="bottom" constant="15" id="EXW-a6-BFa"/>
+                        <constraint firstAttribute="bottom" secondItem="F2p-Fl-cL2" secondAttribute="bottom" constant="15" id="FjU-Ed-ytS"/>
+                        <constraint firstAttribute="bottom" secondItem="MXi-wg-kaV" secondAttribute="bottom" constant="15" id="Hdl-O4-F69"/>
+                        <constraint firstItem="MXi-wg-kaV" firstAttribute="leading" secondItem="qis-9l-9fA" secondAttribute="leading" constant="30" id="JvH-KJ-c8N"/>
+                        <constraint firstItem="NOD-np-dmv" firstAttribute="centerX" secondItem="qis-9l-9fA" secondAttribute="centerX" id="KO4-1U-2kD"/>
+                        <constraint firstItem="F2p-Fl-cL2" firstAttribute="centerX" secondItem="qis-9l-9fA" secondAttribute="centerX" id="by2-3u-V8c"/>
+                        <constraint firstItem="NOD-np-dmv" firstAttribute="top" secondItem="qis-9l-9fA" secondAttribute="top" constant="20" id="iqA-4U-nqF"/>
+                        <constraint firstItem="aFr-D0-o5U" firstAttribute="leading" secondItem="qis-9l-9fA" secondAttribute="leading" constant="20" id="lSR-rT-3sm"/>
+                        <constraint firstItem="MXi-wg-kaV" firstAttribute="top" secondItem="aFr-D0-o5U" secondAttribute="bottom" constant="15" id="qCb-Fk-j0t"/>
+                        <constraint firstItem="aFr-D0-o5U" firstAttribute="centerX" secondItem="qis-9l-9fA" secondAttribute="centerX" id="tGD-DL-9Oo"/>
+                        <constraint firstItem="MXi-wg-kaV" firstAttribute="centerX" secondItem="qis-9l-9fA" secondAttribute="centerX" id="tyY-wE-JC6"/>
+                        <constraint firstItem="F2p-Fl-cL2" firstAttribute="top" secondItem="aFr-D0-o5U" secondAttribute="bottom" constant="15" id="wEr-Cg-5aZ"/>
+                        <constraint firstAttribute="trailing" secondItem="wyy-E9-TwO" secondAttribute="trailing" constant="-10" id="xUh-El-5eu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="qis-9l-9fA" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="SaS-n7-QIk"/>
+                <constraint firstItem="qis-9l-9fA" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="xs8-rq-YQV"/>
+                <constraint firstItem="qis-9l-9fA" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="zHe-gV-sg9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backUB" destination="wyy-E9-TwO" id="ebI-zp-xh8"/>
+                <outlet property="backUV" destination="qis-9l-9fA" id="8H4-Zt-cjd"/>
+                <outlet property="contentUL" destination="MXi-wg-kaV" id="g1N-YE-i5b"/>
+                <outlet property="titleUL" destination="NOD-np-dmv" id="ZhW-zP-7yQ"/>
+                <outlet property="txtContent" destination="F2p-Fl-cL2" id="x2l-hr-wjH"/>
+            </connections>
+            <point key="canvasLocation" x="23.199999999999999" y="50.824587706146929"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="back_small" width="19" height="16"/>
+    </resources>
+</document>

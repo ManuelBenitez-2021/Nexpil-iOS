@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Medium.ttf">
+            <string>Montserrat-Medium</string>
+        </array>
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InformationCardEditable1" customModule="Nexpil" customModuleProvider="target">
+            <connections>
+                <outlet property="identifier" destination="8qj-RL-9Bb" id="oR0-VD-c1S"/>
+                <outlet property="showHideButton" destination="GYh-eE-lg4" id="I5C-xH-52c"/>
+                <outlet property="textView" destination="hEy-B7-sXR" id="F5A-Wo-Jo0"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="522" height="73"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8qj-RL-9Bb">
+                    <rect key="frame" x="10" y="15" width="502" height="19"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First Name" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="hEy-B7-sXR">
+                    <rect key="frame" x="10" y="34" width="422" height="25"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GYh-eE-lg4">
+                    <rect key="frame" x="452" y="21" width="50" height="31"/>
+                    <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="15"/>
+                    <state key="normal" title="SHOW">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="0.5" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="passwordShowHide:" destination="-1" eventType="touchUpInside" id="lKs-BA-3Hy"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="8qj-RL-9Bb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="ErW-sk-h5Y"/>
+                <constraint firstItem="hEy-B7-sXR" firstAttribute="top" secondItem="8qj-RL-9Bb" secondAttribute="bottom" id="H51-fz-dEN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="GYh-eE-lg4" secondAttribute="trailing" constant="20" id="Rqw-XA-DfW"/>
+                <constraint firstItem="GYh-eE-lg4" firstAttribute="leading" secondItem="hEy-B7-sXR" secondAttribute="trailing" constant="20" id="WMh-m5-afH"/>
+                <constraint firstItem="GYh-eE-lg4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="XSm-0b-8xp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8qj-RL-9Bb" secondAttribute="trailing" constant="10" id="a4h-qu-x20"/>
+                <constraint firstItem="8qj-RL-9Bb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="15" id="of0-Vp-hzp"/>
+                <constraint firstItem="hEy-B7-sXR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="xr5-5g-zfj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-19.199999999999999" y="-287.40629685157421"/>
+        </view>
+    </objects>
+</document>
